@@ -1,0 +1,58 @@
+public class Main {
+    public static void main(String[] args) {
+        //if
+        System.out.println("if");
+        
+        int numeroIf = 10;
+        if (numeroIf > 0){
+            System.out.println("Es positivo");
+        } else if(numeroIf < 0){
+            System.out.println("Es negativo");
+        } else if (numeroIf == 0){
+            System.out.println("Es cero");
+        }
+        
+        //While
+        System.out.println("While");
+        int numeroWhile = 0;
+        
+        while (numeroWhile < 3){
+            System.out.println(numeroWhile);
+            numeroWhile = numeroWhile + 1;
+        }
+        
+        //Do While
+        System.out.println("Do While");
+        
+        do System.out.println(numeroWhile);
+        while(numeroWhile > 3);
+        
+        //For
+        System.out.println("For");
+        
+        for(int numeroFor = 0; numeroFor <= 3; numeroFor++){
+            System.out.println(numeroFor);
+        }
+        
+        //Switch
+        System.out.println("Switch");
+        String estacion = "calor";
+        
+        switch (estacion){
+            case "Primavera":
+                System.out.println("Primavera");
+            break;
+            case "Invierno":
+                System.out.println("Invierno");
+            break;
+            case "Otoño":
+                System.out.println("Otoño");
+            break;
+            case "Verano":
+                System.out.println("Verano");
+            break;
+            default:
+            System.out.println("Estacion inexistente");
+        }
+    }
+}
